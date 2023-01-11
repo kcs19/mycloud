@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> 김창성 </title>
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <style>
+    	*{
+        font-family: 'Stylish', sans-serif;
+        margin: 0px; 
+        padding: 0px;
+
+      }
+
+       a{
+        text-decoration: none;
+       }
+
+       li{
+        list-style: none;
+      }
+      body{
+        background: white;
+        width:1000px; 
+        margin:0 auto;
+      }
+      #page-wrapper{
+        background: white; 
+        padding:0px 0px; 
+        
+        margin-top:40px;
+      }
+
+       #main-header{
+       	position: relative;
+       	width: 1000px;
+       	height: 400px;
+        padding:0px 0px;
+        
+      }
+      .master-title{
+      	position: absolute;
+      	top: 40%;
+      	left: 30%;
+      	color: #dcdcdc;
+      	font-size: 70px;
+      	text-align: center;
+      }
+      .master-description{
+      	position: absolute;
+      	top: 60%;
+      	left: 30%;
+      	color: #dcdcdc;
+      	font-size: 30px;
+      	
+      }
+      .main-img{
+      	width:1000px;
+      	height:400px;
+      }
+      #main-navigation{
+      	margin-top: 20px;
+      	margin-bottom: 20px; 
+        border-top: 1px solid #C9C9C9; 
+        border-bottom: 1px solid #C9C9C9; 
+        height: 110px; overflow: hidden;
+        background-color: #BECDFF;
+      }
+
+      #main-section{
+      	float: right;
+      }
+      .category-title{
+      	text-align: center;
+      	height: 30px;
+      	margin-top: 10px;
+      	margin-bottom: 10px;
+      	border-bottom: 1px solid #C9C9C9;
+
+      }
+      .face{
+      	width: 100px;
+      	height: 100px;
+      	border-radius: 40px;
+      	float: left;
+      	margin: 10px 10px 10px 10px; 
+      }
+      #main-aside{
+      	margin-bottom: 30px;
+      	width: 280px;
+      	border-top: 3px solid #BECDFF;
+      }
+      .font_center{
+			display: block;
+			text-align:center;
+			line-height: 30px;
+			color: white;
+		}
+		.introduce-button{
+			margin-top: 10px;
+			width: 270px;
+			height: 30px;
+			background-color: #6FCC98;
+			border-radius: 30px; 
+		}
+		.category-list li :before{
+			content: ">";
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0 5px 10px 20px;
+
+		}
+		.QandA-list li{
+			list-style-type: decimal;
+			margin: 0 5px 10px 25px;
+		}
+		#main-section{width: 680px; margin-left: 20px;}
+		article{
+			padding:0 0 40px 0; 
+        	border-bottom: 1px solid #C9C9C9;
+        }
+       .article-header{
+       		padding: 20px 0;
+       }
+       .article-subject{color: #aaaaaa}
+       	.article-title{
+       		font-size: 25px;
+       	}
+
+    input:nth-of-type(1) {display: none;}
+    input:nth-of-type(1)~ div:nth-of-type(1) {display: none;}
+    input:nth-of-type(1):checked~ div:nth-of-type(1) {display: block;}
+    input:nth-of-type(2) {display: none;}
+    input:nth-of-type(2)~ div:nth-of-type(2){display: none;}
+    input:nth-of-type(2):checked~ div:nth-of-type(2){display: block;}
+
+    section.tab-title{overflow: hidden;}
+    section.tab-title>label{
+      display: block;
+      float: left;
+      width: 500px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+    input:nth-of-type(1):checked~ section.tab-title> label:nth-of-type(1){
+      background:white; 
+    }
+    input:nth-of-type(2):checked~ section.tab-title> label:nth-of-type(2){
+      background:white;
+    }
+    .item{
+      overflow: hidden;
+      width: 1000px;
+      padding: 10px;
+    }
+    .description{
+      float: left;
+      margin-left: 10px; 
+    }
+    .description> strong{
+      display: block;
+      width: 480px;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #E16A93;
+    }
+    .description1{
+      float: left;
+      margin-left: 510px; 
+    }
+    .description1> strong{
+      display: block;
+      width: 480px;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #E16A93;
+    }
+    .body{
+    	font: 20pt;
+    	font-family: '맑은 고딕',Gothic,sans-serif;
+
+    }
+    .body-right{
+    	float: left;
+    	height: 300px;
+    	margin-right: 15px;
+    	margin-bottom: 5px;
+    }
+    .body-left{
+    	float: right;
+    	height: 300px;
+    	margin-left: : 15px;
+    	margin-bottom: 5px;
+    }
+    .body strong{
+    	font-family: '맑은 고딕',Gothic,sans-serif;
+    }
+    .picture1{
+    	height: 200px;
+    	float: left;
+    	margin-top: 5px;
+    	margin-right: 15px;
+    	margin-bottom: 5px;
+    }
+    .picture2{
+    	height: 200px;
+    	float: right;
+    	margin-top: 5px;
+    	margin-left: 20px;
+    	margin-bottom: 5px;
+    }
+    .body-center{
+    	width: 600px;
+    }
+    </style>
+</head>
+<body>
+    
+<div id="page-wrapper">
+   
+    <header id="main-header">
+    	<img class="main-img" src="봄축제.jpg">
+    	<h1 class="master-title">MY MEMORIES</h1>
+    	<h2 class="master-description">나의 추억들</h2>
+    </header>
+
+    <nav id="main-navigation">
+       	<input id=memory type=radio name=tab checked=checked>
+      	<input id=intro type=radio name=tab>
+      <section class=tab-title>
+          <label for=memory> 나의 소중한 기억들 </label>
+          <label for=intro> 소개합니다 </label>
+      </section>
+      <div class=tab-item>
+      <ul>
+        <li class="item">
+          <a href="#mobook">
+            <div class="description">
+              <strong>나의 소중한 기억 <책></strong>
+            </div>
+          </a></li>
+        <li class="item">
+          <a href="#momovie">
+            <div class="description">
+              <strong>나의 소중한 기억 <영화></strong>
+            </div>
+          </a></li>
+      </ul>
+      </div>
+
+    <div class=tab-item>
+      <ul>        
+        <li class="item">
+          <a href="#introme">
+            <div class="description1">
+              <strong>나를 소개합니다</strong>
+            </div>
+          </a></li>
+        <li class="item">
+          <a href="#introtrip">
+            <div class="description1">
+              <strong>여행을 소개합니다</strong>
+            </div>
+          </a></li>
+      </ul>
+    </div>
+    </nav>
+
+    <div id="content">
+
+    <section id="main-section">
+        
+        <article>
+            <div class="article-header">
+            	<h5 id="mobook"></h5>
+            	<h4 class="article-subject">나의 소중한 기억 <책></h4>
+                <h1 class="article-title">"돌이킬 수 없는 약속"</h1>
+                <p class="article-date">2018년 10월 중순</p>
+            </div>
+            <div class="article-body">
+                <img class="body-right" src="돌이킬 수 없는 약속.PNG">
+                <p class="body">나는 한 학기에 책을 5권씩 읽겠다고 다짐했다. 자서전과 과학도서에 질린 나는 재밌는 책을 찾고 있었다. 이 책은 너무 재밌어서 도서관에 반납하자마자 빌려간다는 소문을 듣고 어렵게 어렵게 빌렸다. 그것은 이번 학기 두번째로 읽은 책인 <strong>"돌이킬 수 없는 약속"</strong> 이다.<br/>  <br/> 이 소설의 주인공은 얼굴에 흉터때문에 모두에게 버림받은 사람이다. 일자리도 구하지 못해 나쁜길로 빠진다. 죽을 위기에 처한 주인공을 구해준 사람은 난생 처음 본 할머니였다. 얼마후 할머니는 3개월 뒤에 죽는 시한부임을 말하고 부탁을 한다. <strong>"나의 딸을 죽인 범인들이 무기징역을 받았어, 15년뒤 감옥에서 나온 범인들을 죽여준다면 나의 전재산을 줄게. 하지만 약속을 지키지 않으다면 나와 같은 고통을 받을 거야"</strong> <br/> 주인공은 망설이다 이 부탁을 약속하고 할머니가 주신 전 재산으로 이후 행복한 하루를 보낸다. 15년이 지났다. 한 우편이 집으로 왔다. "범인들이 나왔다."라는 소식과 범인들의 주소 그리고 주인공의 딸이 놀이터에서 놀고 있는 사진을 포함하고 있었다. 이 내용을 시작으로 스토리가 전개된다.<br/><br/> "편지를 누가 보냈지?..", <strong>"나라면 어떻게 했을까?"</strong> 많은 의문을 가지고 나는 주인공이 되어 스토리에 몰입했다. 가족을 생각하는, 현재를 지키려는 <strong>주인공의 행동이 스릴있고 반전과 예상하지도 못한 전개</strong>가 나와 시간가는 줄 모르고 읽었다. 주인공의 성격이 무서움을 많이 타는 나와 닮아 더 몰입하며 볼 수 있었다. 대학을 가기위한 공부만 하던 시절, 너무 지쳐있을때 이 책은 마음의 휴식을 주었다. 내용도 재밌었지만 그렇기에 더욱 잊을 수 없는 책이다.<br/><br/>
+                이 소설의 작가는 <strong>야쿠마루 가쿠</strong>이다. 1969년에 일본 효고현에서 태어났다. "돌이킬 수 없는 약속"으로 종합 베스트 셀러 1위를 달성했고 낸 책들의 많은 부분이 추리소설이다. <br/> 피해자의 주변사람들은 매일 매일 고통에 사는데, 사람을 죽였음에도 불구하고 가해자는 적은 처벌을 받는 현실을 잘 표현한 것같다. 기회가 된다면 이 작가님의 다른 책들도 읽어 볼 계획이다. 
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <div class="article-header">
+            	<h5 id="momovie"></h5>
+            	<h4 class="article-subject" >나의 소중한 기억 <영화></h4>
+                <h1 class="article-title">"기생충"</h1>
+                <p class="article-date">2019년 6월 어느날</p>
+            </div>
+            <div class="article-body">
+                <img class="body-left" src="기생충.jpg">
+                <p class="body">시험이 얼마남지 않았을 시기, 유명하고 유명한 <strong>봉준호 감독님의 신작, "기생충"</strong>이 나왔다. 영화는 보통 호불호가 나뉘는데, 이 영화가 어떠냐고 주변 사람들에게 물어보면 모두 "재밌다", "추천한다"라는 호의적인 평이었다. <strong>'얼마나 재밌길래 모든 사람이 추천해?..'</strong> 너무 기대가 됐다. 도저히 시험이 끝나기를 기다릴 수 없어, 수업이 끝나고 영화를 보러갔다.<br/><br/> 처음은 스토리가 코믹하게 흘러갔다. 가난한 주인공의 아들이 문서를 위조하고 명문대생으로 속여 부잣집에 과외를 하게 되었다. 그리고는 부잣집의 가족들을 속여 부잣집에서 일하는 사람들을 모두 쫓고 동생, 아빠, 엄마를 차례로 부잣집에서 일하게 해준다. 그것도 모르는 부잣집 가족들 몰래 주인공 가족들은 서로 장난치고 나의 물건처럼 사용한다. 얼마 후, 그 집안의 비밀과 예상치도 못한 일이 일어난다.<br/><br/> 가난한 가족들이 부잣집 가족들에게 숨긴 사실을 들킬까봐 조마조마 하며 숨죽이며 영화를 봤다. 대부분의 영화는 예상범위의 안에 있는데 이 영화의 <strong>주인공들의 행동들은 예상도 할 수 없었다.</strong> 그렇기 때문에 아직도 영화 내용이 기억에 생생하게 남아있다. <strong>이 영화는 나의 인생영화라고 할 정도로 지루할 틈도 없도 없이 재미있게 봤다.</strong><br/> 이 영화의 감독은 <strong>봉준호</strong> 감독님이다. 한국의 대표 영화감독이라고 해도 손색이 없는 분이다. 대표작으로는 "살인의 추억", "괴물", "설국열차" 등이 있다. 칸 영화제에서 한국영화 100년 역사상 최초로 최고상인 황금종려상을 수상했다. <br/>"살인의 추억", "설국열차"도 재밌게보아 이번 영화도 기대했는데 역시 기대를 져버리지 않았다. 내가 영화를 볼때만 해도 해외에서도 반응이 뜨거울 줄 몰랐는데, 뜨겁다 못해 국제 영화제인 칸느에서도 수상을 하다니, 정말 자랑스럽다. <strong>한국의 3대 자랑 "손흥민", "BTS", "봉준호"</strong>라는 말에 공감한다.
+                </p>
+            </div>
+        </article>
+
+         <article>
+            <div class="article-header">
+            	<h5 id="introtrip"></h5>
+            	<h4 class="article-subject">소개합니다</h4>
+                <h1 class="article-title">중국 "칭다오 여행"</h1>
+                <p class="article-date">2020년 1월 5일</p>
+            </div>
+            <div class="article-body">
+                 <img class="picture1" src="여행출발.jpg">
+                <p class="body"><strong>군대가 한달도 안남은 친구 승호는 여행가자는 노래를 불렀다.</strong> 그에 대한 대답으로 우린 비행기 티켓 중 제일 싼 <strong>중국 칭다오행 티켓</strong>을 예약했다. 한창 우한 폐렴이 시작될 시기라 부모님의 염려에도 불구하고, "별로 심하지 않다", "마스크만 잘하면 된다"며 설득시켰다. 마음으로는 걱정도 조금 있었지만 간만에 여행이라 설레는 마음이 더 컸다.<br/><br/>
+               	비행기 시간이 새벽인터라, 우린 하루 전날 인천공항행 마지막 버스를 타고 미리 공항에 도착해 공항 찜질방에서 자기로 했다. 새벽인데도 공항에 사람은 많았고 앉을 곳도 당연히 없었다. 찜질방 가격은 비쌌다. 하지만 찜질방 아니면 잘곳이 없기에 찜질방 줄을 섰다. 아뿔싸! 줄을 길게 섰는데, 줄어들 기미가 보이지 않았고 우린 떠돌며 잘 곳을 찾기로했다. '이럴줄 알았으면 일찍자고 택시타고 올걸' 후회했다. 불빛이 있는 곳은 사람들이 모두 자리를 차지하고 있었고 우린 구석 추운곳에서 패딩을 껴안고 쪽잠을 잤다.</p>
+            </div>
+            <div class="article-header">
+                <h1 class="article-title">"첫째날"</h1>
+                <p class="article-date">2020년 1월 6일</p>
+            </div>
+             <div class="article-body">
+                
+                <p class="body">불편하게 얼마 잠을 자지도 못하고 여행 당일이 됐다. 한명은 감기에 걸렸다. <strong>여행 첫날은 망할 것 같은 예감이 들었다.</strong> 조금 빨리 비행기에 타고 우린 모두 비행기가 이륙하기도 전에 모두 잠들어버렸다. 눈떠보니, 중국에 도착해 있었다. 공항을 나오자마자 <strong>낯선 사람이 말을 걸었다.</strong> 싼가격에 숙소에 데려다 주겠다고 했다. 중국에 오기 전에 나는 중국에 대한 좋지 않은 소문을 많이 들은 터라 겁이 났다. 친구들에게 절대 안된다고 않좋은 일 당하면 어쩌냐고 말렸다. 하지만 친구들은 싸다는 이유로 덜컥 그 낯선 사람의 제안에 수락해버렸다. 숙소에 가는 내내 나는 긴장했다. "설마 이상한데 데리고 가지는 않을까?" 전날에 잠을 제대로 자지 못해 피곤함에도 불구하고 핸드폰 GPS를 계속 보고 있었다. 다행이 무사히 숙소에 도착했고 2시간정도 잠을 자고 여행하기로 했다. <br/><br/>
+                <img class="picture2" src="샤오롱바오.PNG"> 
+				중국에서 첫끼니로 <strong>샤오롱바오</strong> 맛집을 찾아가기로 했다. <strong>"딘타이펑 - 마리나 시티점"은</strong> 마리나 시티를 찾아와 공원으로 들어가기 전에 있었다. 한자를 몰라도 유명한 곳인지 주변보다 빨갛게 화려하게 되어있었다. 한글 메뉴판이 있고 베스트메뉴도 쉽게 알아볼 수 있어서 주문을 수월하게 할 수 있었다. 우린 샤오롱바오, 파이구볶음밥, 국수를 시켰다. 
+				바오롱샤오 맛있게 먹는 법을 따라 먹었다. <strong>입안에 육수가 퍼지면서 속이 꽉차 있었지만 그렇게 맛있다고 할 정도는 아니였다.</strong> 입에 맞는 친구들은 몇몇 있었다. 파이구볶음밥은 갈비볶음밥인데 조금 짜고 기름졌었다. 맛은 좋았다. 가격은 중국 물가에 비해 조금 비싼편이었다.<br/><br/> <img class="picture1"src="꼬치.jpg">밥을 먹고 주위에 있는 <strong>마리나시티</strong>에 한번 가보기로 했다. 들어가려고 봤더니 <strong>낮인데도 불구하고 불이 다 꺼져 있었고 몇몇 빈 점포도 보였다. 장사를 않하는 것 같았다.</strong> 어쩔 수 없이 발걸음을 돌렸다. <br/>다음 향한 곳은 <strong>"피차이위엔 꼬치거리"</strong>. 주위에 먹을 것, 옷, 신발가게가 쫙 늘어져있다. <strong>꼬치중에는 돼지는 기본이고, 소, 양, 오징어, 불가사리, 조개 등 "이런것도 먹을 수 있어?" 하는 생물도 있었다.</strong> 향신료 냄새가 가득하고 신기한 볼거리도 많이 있었다. 꼬치를 먹어보니 어느 꼬치든 향신료는 기본이고 혀가 조금 얼얼해졌다. 혀가 얼얼해져 주변에 있는 꽈배기와 희한한 맛의 음료로 혀을 달랬다. 피곤했던 여행 첫째날이 끝나고 숙소에서 맥주, 과일과 한국과자와 모양은 비슷하지만 맛이 조금 다른 중국과자를 먹으면 첫째날을 마무리했다. </p>
+            </div>
+            <div class="article-header">
+                <h1 class="article-title">여행 둘째날</h1>
+                <p class="article-date">2020년 1월 7일</p>
+            </div>
+             <div class="article-body">
+                
+                <p class="body"><strong>재수가 없다. 아침부터 비가 내렸다. 계획이 틀어졌다. </strong>일어나자마자 다시 여행 계획을 짰다. 한참뒤 밥을 먹으러 나섰다. 아무도 우산을 챙겨오지 않아 가위바위보로 우산사오기 내기를 했는데, 아싸리 내기에서 이겼다.아침은 완허춘에서 해결하기로 했다.<br/><br/> <img class="picture1"src="파이구미판.jpg"><strong>완허춘</strong>은 중국 프렌차이즈 식당이다. 주문하는 곳에 음식 사진이 크게 나와 있어 주문은 어렵지 않았다. <strong>대표메뉴는 파이구미판, 한국의 감자탕과 유사한 맛이다.</strong> 밥, 반찬과 콜라가 같이 나오는데 콜라가 시원하지 않았다. 조금 간장맛이 나는 것 같지만 감자탕을 많이 먹는 한국인에게는 잘 맞는 음식이라는 생각이 들었다. <br/><br/>비가 와 여행지는 한정적이었다. 다음 관광지는 <strong>우전박물관</strong>이다. 우편 전화에 대한 역사를 기록해 놓았다. 설명은 한자로 되어있어 이해하지 못했고 <strong>스탬프와 기념품이 가득 전시되어 있어 볼 거리로 충분했다.</strong> 구경하다 보면 마네킹이 전화를 하고 있는데, 사람인줄 알고 깜짝 놀랐다. 우전박물관 위층에는 분위기 있는 카페가 있어 여유롭게 쉴 수 있었다. 카페엔 빨간 글씨로 적힌 경고문 같은게 있었는데, 만지지 마시오인가? 추측하며 우리는 조심스럽게 행동했다. 알고보니 계단조심이었다.. ㅎ하하하<br/><br/> <img class="picture2"src="훠궈.jpg">허기가 진 우리는 <strong>훠궈</strong>로 유명한 <strong>운소로 미식거리</strong>에 있는  <strong>"통더라이"</strong>로 갔다. 여기도 역시 한글 메뉴판이 준비되어 있었다. 우리가 주문한 훠궈는 빨간 탕과 흰 탕으로 나누어져있었다. 샤브샤브와 유사하게 고기와 야채를 집어넣어 우리가 만든 소스에 찍어 먹었다. <strong>고기를 포함한 납작두부, 새우완자와 목이버섯은 입맛에 맞았다.</strong> 맛도 샤브샤브와 거의 똑같아 한국음식을 먹는 것같이 너무  맛있게 잘먹었다.<br/><br/> 중국하면 생각나는 짝퉁. 다음은 <strong>짝퉁시장인, "찌모루시장"</strong>이다. 그곳에 명품이 가득했는데, 대부분 진짜와 유사했다. 짝퉁에서도 S,A급 등 급이 나뉜다는 사실을 처음 알게 되었다. 나는 형의 선물로 명품 지갑을 사기로했다. <img class="picture1"src="찌모르.jpg">상인들은 한국사람을 많이 상대해 보았는지, <strong>웬만한 한국말은 대부분 능숙했다. "싸게 줄게요", "구경만 해요" </strong>한국말을 들으니 친근했다. 유투브에서 짝퉁시장에서 흥정하는 법을 본 적이 있는데, 그것을 직접 하게 될 줄은 몰랐다. 첫번째, 상인이 가격을 제시하면 1/2로 낮추어 말해라. 당연히 안된다고 말한뒤, 절반의 가격과 상인이 제시한 가격의 중간쯤을 다시 제시했다. 이쯤에서 두번째, 안산다고 나가는 척을 한다. 이 방법을 사용하고 조금 더 낮은 가격에 물건을 살 수 있었다. 흥정하는 것을 재미있었다. 짝퉁시장에서 나는 백화점 VIP라도 된것 같았다. <br/><br/> 저녁은 <strong>"궤가미도"</strong>의 <strong>마라롱샤</strong>이다. 마라롱샤는 이름에서 유추가능한 <strong>마라소스에 요리한 가재</strong>이다. 가재의 크기는 두 손가락만했고 손으로 까서 먹어야 한다. 어떻게 가재를 까야하는지 모른 우리는 인터넷에 검색했다. 먼저 머리를 따고, 배를 꾹 눌러서 가른뒤 살을 조심히 꺼내 먹으면 된다. 이것도 <strong>향신료 맛이 진하고 혀가 얼얼하다. 짭잘하고 매운 양념이 중독성이 있었다. 하지만 단점, 까기 귀찮다.</strong> 먹다가 손이 베였는데 향신료때문인지 욱신욱신했다. 가격은 조금 비싼편이다. 여행 두번째날을 틀어진 계획에도 알차게 보내 뿌듯했다.</p>
+            </div>
+            <div class="article-header">
+                <h1 class="article-title">여행 마지막날</h1>
+                <p class="article-date">2020년 1월 8일</p>
+            </div>
+             <div class="article-body">
+                <p class="body"> <img class="picture1"src="진취덕.jpg">날씨가 금방 풀려 다행이다. 계획대로 아침엔 중국하면 먹어야 한다는 <strong> 베이징덕, "진취덕"</strong>이다. 5.4광장이 근처에 있지만 밤에 봐야 이쁘므로 일단은 패스했다. 문앞에는 요리사 모자를 쓴 오리가 반기고 있었다. 빨갛고 거대한 문은 고급져 보였다. 우리는 메뉴가 고기라 푸짐하게 시켰다. 갑자기 요리사가 오더니 우리 테이블 옆에서 직접 오리를 썰어주었다. 처음에 소스를 찍어 먹는데 느끼하고 바삭한데 맛있었다. <strong>만두피에 오이, 양파와 고기를 싸서 소스에 찍어먹으면 고기의 느끼함을 덜어주어 맛있었다. 하지만 그래도 느끼해서 많이 먹지는 못했다.</strong> <br/><br/><br/>다음은 <strong>칭다오 하면 맥주! "맥주 박물관"</strong>이다. 사실 칭다오에 온 이유도 맥주 때문이다. 박물관은 거대했고 깊은 역사가 눈에 보였다. <strong>외관은 유럽풍의 느낌이 물씬 들었다.</strong> 과거 칭다오 맥주의 시작과 역사를 보여주는 것 같았는데 중국어로 되어있어 역시 이해는 하지 못했다.<img class="picture2" src="맥주 박물관.jpg"> 과거부터 현재까지의 칭다오 맥주 디자인이 쭉 전시되어 있었는데 체육관 만한 크기의 벽에 가득찰 정도였다. <strong>현재 칭다오 맥주를 만들고 있는 공장의 일부도 볼 수 있었고, 술을 먹었을때의 어지러움 겪어볼 수 있는 체험의 장 있었다. 당연히 맥주 기념품점이 있었고 꿀땅콩과 맥주도 제공하였다.</strong> 맥주공장에서 맥주를 먹으니 신선한 맛이 그대로 전해졌는지 더욱 맛있었다. <br/><br/>다음으로는 <strong>"잔교"</strong>로 향했다. 잔교는 배를 접안시키기 위해 물가에 만들어진 시설이다. 등대처럼 바다에 있고 다리를 통해 육지와 멀리 연결되어 있었다. <strong>잔교의 모습은 바다위에 성처럼 보였다.</strong> 다리를 걸어 가는데, 겨울이고 바다라 그런지 바람이 세게 불어 많이 추웠다. 그럼에도 불구하고 관광객들은 많이 있었다. <br/><img class="picture1" src="잔교.jpg"><strong>잔교</strong>에서 나와 택시를 타고 다음 목적지를 말했다. 목적지 중간쯤 왔는데 택시 미터기가 꺼져 있는 것을 확인했다. 왜 꺼져있지 의심하며 목적지에 도착했는데, 우리의 생각보다 더 많은 돈을 요구했다. 택시기사와 실랑이를 벌이다가. 여행의 기분을 망치고 싶지 않아 결국 요구하는 돈은 주고 내려버렸다. <br/><br/>벌써 저녁이 되어 근처에 있는 큰 마트에 있는 <strong>중국식 마라탕</strong>을 먹었다. 한국에서 마라탕을 한번 먹고 혀가 감각이 없을 정도로 얼얼해 진뒤, 다시 마라탕을 먹어본적이 없다. 하지만 중국의 마라탕은 뭔가 쫌 달랐다. 마라 1단계를 선택해서 그런지 몰라도 하얀국물인데 마라맛이 많이 심하지않았고 얼큰한 맛이었다. 막 기억나는 맛은 아니었지만 생각보다 맛이 있어 남기지 않았다. 국물까지 열심히 먹고 있는데, 친구가 이런 말을 했다. <strong>"중국에서는 경제적으로 어려운 사람들이 국물까지 먹는다는 말이 있데!"</strong> 그 사실을 듣고 국물 먹는것을 멈추었다. <br/><br/> <img class="picture1"src="5.4광장.jpg"><strong>마지막 여행 코스를 장식하게 될 곳은 5.4 광장</strong>이다. 아침에도 빨간 조형물이 눈에 띄게 보였는데, 밤에 보니 더 그것밖에 안보였다. <strong>5.4광장과 멀어지며 올림픽 요트 경기장쪽으로 가며 보는 야경은 아주 예술이다. 5.4광장 뒤에 거대한 빌딩에서 나오는 빛과 이미지가 여행의 마지막을 더욱 아쉽게 했다.</strong> 우리는 오랜 시간동안 야경을 구경했다. 5.4광장을 간다면 꼭 밤에 가는 것을 추천한다. 마지막으로 <strong>올림픽 요트 경기장</strong>으로 갔다. <strong>다양한 국기가 양쪽으로 쭉 걸려있는데 마치 내가 나라를 대표하여 시상식에 나가는 상상을 하게 하며 나를 설레게 했다.</strong> 그 중 우리나라 국기는 애국심이 더 불타게 했다. 마지막 날은 추웠지만, 우린 너무 아쉬워 오래 같은 자리에 머물렀다. 다음 여행에서도 이런 두근대는 마음을 느낄 수 있을까? </p>
+            </div>
+        </article>
+
+       <article>
+            <div class="article-header">
+            	<h5 id="introme"></h5>
+            	<h4 class="article-subject">자기소개</h4>
+                <h1 class="article-title">"나를 소개합니다"</h1>
+            </div>
+            <div class="article-body">
+                
+                <p class="body">
+                	<strong>0000000000000</strong>에서 태어났습니다.<br/>
+                	<strong>0000000000000</strong>으로 전학왔습니다.<br/>
+                	<strong>0000000000000</strong>를 졸업하였습니다.<br/>
+                	현재는 <strong>0000000000000</strong>입니다.<br/>
+                	<img class="body-center" src="축구동아리.jpg"> <br/>
+                	<br/>저는 스포츠로는 <strong>축구</strong>를 좋아합니다.<br/>
+                	취미로는 <strong>FIFA 게임하기, 영화보기</strong>가 있습니다.<br/>
+                	<strong>밖에서 나가 활동하는 것</strong>을 좋아하며, <strong>여행</strong>과 <strong>소풍</strong>을 좋아합니다. <br/><strong>맛집 찾아다니는 것</strong>을 좋아하며 <strong>맛있는 것을 먹을때 행복</strong>을 느깁니다.<br/><strong>웃음이 많고 말수가 적습니다.</strong> <br/> 
+
+                </p>
+            </div>
+        </article> 
+
+        <article>
+            <div class="article-header">
+            	<h5 id="intromy"></h5>
+            	<h4 class="article-subject">자기소개</h4>
+                <h1 class="article-title">"내 안의 나"</h1>
+            </div>
+            <div class="article-body">
+                
+                <p class="body">
+                	<strong>1. 별명은 무엇인가요?</strong><br/>
+                	> 런닝맨의 지석진 입니다. 그 이유는 술자리에서 제가 죽으면 레이스가 시작되기 때문입니다.<br/><br/>
+                	<strong>2. 내 장점은 무엇인가요?</strong><br/>
+                	> 잘 웃는 것이 저의 장점입니다.<br/><br/>
+                	<strong>3. 내 단점은 무엇인가요?</strong><br/>
+                	> 집중하는데 오랜시간 걸리고 게으릅니다.<br/><br/>
+					<strong>4. 기억나는 여행은?</strong><br/>
+                	> 최근에 갔다온 칭다오 여행입니다. 마지막 날의 5.4광장의 야경은 아직도 잊을 수 없기 때문입니다.<br/><br/>
+					<strong>5. 가장 기억 남는 영화는?</strong><br/>
+                	> 기생충입니다. 예상밖에 전개가 흥미를 주었습니다.<br/><br/>
+					<strong>6. 기억에 남는 책은?</strong><br/>
+                	> 돌이킬 수 없는 약속 입니다. 책을 읽으며 시간가는 줄 도 모른 적은 처음이었기 때문입니다.<br/><br/>
+					<strong>7. 좋아하는 숫자는?</strong><br/>
+                	> 7번 입니다. 축구에서 에이스가 7번을 달고 뛰기 때문입니다.<br/><br/>
+					<strong>8. 좋아하는 색깔은?</strong><br/>
+                	> 초록색 입니다. 푸릇푸릇한 새로운 느낌을 좋아하기 때문입니다.<br/><br/>
+                	<strong>9. 좋아하는 과일은?</strong><br/>
+                	> 수박 입니다. 여름의 수박은 사막의 오아시스같기 때문입니다.<br/><br/>
+                	<strong>10. 좋아하는 계절은?</strong><br/>
+                	> 봄 입니다. 새로운 해의 시작이며, 밖에서 뛰놀기 좋은 날씨를 가지고 있기 때문입니다.<br/><br/>
+                	<strong>11. 좋아하는 운동선수는?</strong><br/>
+                	> 박지성 선수 입니다. 경기장에서 팀을 위해 헌신하며 쉬지않고 달리기 때문입니다.<br/><br/>
+                	<strong>12. 현재하고 있는 고민은?</strong><br/>
+                	> 군대를 언제가야 좋을까? 입니다.<br/><br/>
+                	<strong>13. 어떤 노래를 좋아합니까?</strong><br/>
+                	> 커피소년의 내가 니편이 되어 줄게 좋아합니다. 듣고 있으면 힘이 나기 때문입니다.<br/><br/>
+					<strong>14. 나만의 스트레스 해소법은?</strong><br/>
+                	> 위로의 노래 듣기 입니다. 힘든 나를 달래주고 기댈 수 있게 해주기 때문에 위로가 됩니다.<br/><br/>
+					<strong>15. 내가 한심하다고 느껴질때는 언제입니까?</strong><br/>
+                	> 과제가 산더미같이 쌓였을때 입니다.<br/><br/>
+					<strong>16. 좋아하는 캐릭터는?</strong><br/>
+                	> 아이언맨 좋아합니다. 세상을 위해 노력하고 희생하기 때문입니다.<br/><br/>
+					<strong>17. 가장 꼴불견이라고 생각하는 사람은?</strong><br/>
+                	> 남에게 피해주는 사람입니다.<br/><br/>
+					<strong>18. 지금 폰의 기종은?</strong><br/>
+                	> 갤럭시 S5입니다. 핸드폰에 대한 욕심이 없습니다.<br/><br/>
+                	<strong>19. 운명이란?</strong><br/>
+                	> 내가 만드는 것이라고 생각합니다. 운도 나의 행동에 달렸다고 생각합니다.<br/><br/>
+                	<strong>20. 문답을 마친 나에게 하고싶은 말은?</strong><br/>
+                	> 열심히 살았으면 좋겠다. 입니다.<br/><br/><br/><br/>
+
+                	 
+
+                </p>
+            </div>
+        </article> 
+
+
+
+    </section>
+
+    <aside id="main-aside">
+    	<div class="introduce">
+    		<h3 class="category-title">자기소개</h3>
+    		<img class="face" src="창성.png">
+    		<p>김창성</p>
+    		<p>0000000000000</p>
+    		<p>0000000000000</p>
+    		<p>성별: 남자</p>
+    		<p>0000000000000</p>
+    		<p>0000000000000</p>
+    		<div class="introduce-button">
+    			<a href="#intromy" class="font_center">20문답 보러가기</a>
+    		</div>
+    	</div>
+    	
+    </aside>
+
+     <aside id="main-aside">
+        <div class="aside-list">
+            <h3 class="category-title">category</h3>
+            <ul class="category-list">
+                <li><a href="#introme"> 자기소개</a></li>
+                <li><a href="#mobook"> 책</a></li>
+                <li><a href="#momovie"> 영화</a></li>
+                <li><a href="#introtrip"> 여행</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <aside id="main-aside">
+        <div class="QandA" >
+            <h3 class="category-title">20문 20답</h3>
+            <ul class="QandA-list">
+                <li><a href="#bottom" name="bottom" onclick="alert('크게 나타낸다는 뜻입니다.')">이름의 뜻은 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('O형 입니다.')">혈액형은 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('174cm 입니다.')">키는 얼마인가?</a></li>
+                <li><a href="#bottom" onclick="alert('255mm 입니다.')">발 사이즈는 얼마인가?</a></li>
+                <li><a href="#bottom" onclick="alert('0.1입니다.')">시력이 얼마인가?</a></li> 
+                <li><a href="#bottom" onclick="alert('런닝맨의 지석진 입니다. 그 이유는 술자리에서 제가 죽으면 레이스가 시작되기 때문입니다.')">별명은 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('한 역할을 맡으면 최선을 다합니다.')">장점은 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('게으르고 이해력이 느립니다.')">단점은 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('넷플릭스보기와 축구게임하기 입니다.')">취미는 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('잠버릇은 없습니다.')">잠버릇은 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('박지성 선수입니다. 경기를 임할때 팀을 위해 쉬지않고 달리기 때문입니다.')">존경하는 사람이 누구인가?</a></li>
+                <li><a href="#bottom" onclick="alert('정직하고 성실하게 살자! 입니다.')">좌우명이 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('고등학생때 미국여행이 가장 기억에 남습니다. 저에게 첫 해외여행이었고 대한민국과 다른 넓고 자유로운 감정이 벅찬 느낌을 느낀 여행이기 때문입니다.')">가장 기억에 남는 여행은 어디인가?</a></li>
+                <li><a href="#bottom" onclick="alert('커피소년의 내가 니편이 되어줄게 라는 곡을 좋아합니다.')">좋아하는 노래는 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('축구 입니다.')">좋아하는 스포츠는 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('고기와 면종류를 좋아합니다.')">좋아하는 음식은 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('우리나라 축구선수, 손흥민 선수 좋아합니다.')">좋아하는 운동선수는 누구인가?</a></li>
+                <li><a href="#bottom" onclick="alert('배우 하연수 좋아합니다.')">좋아하는 연예인은 누구인가?</a></li>
+                <li><a href="#bottom" onclick="alert('푸른 계열의 색을 좋아합니다.')">좋아하는 색깔은 무엇인가?</a></li>
+                <li><a href="#bottom" onclick="alert('군대를 언제 가야할지 고민했습니다.')">최근에 무슨 고민했나?</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    </div>
+    <footer id="main-footer">
+        <a href="#">Created by Changsung Kim</a>
+    </footer>
+</div>
+</body>
+</html>
